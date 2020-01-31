@@ -19,7 +19,7 @@ RUN mkdir /etc/gobgp
 VOLUME [ "/etc/gobgp/" ]
 
 COPY run.sh /root/
-
+COPY gobgpd.conf /etc/gobgp
 
 ENTRYPOINT /bin/bash /root/run.sh
 
